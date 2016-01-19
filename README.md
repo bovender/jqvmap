@@ -1,12 +1,13 @@
 Deutsche Postleitzahlen (German ZIP codes)
 ==========================================
 
-This fork of [JQVMap](https://github.com/manifestinteractive/jqvmap) provides source data and ready-to-use map files containing German ZIP code regions. One map draws each individual ZIP code area (as of 1999), and the other has a reduced set of ZIP code regions grouped by the first two digits.
+This fork of [JQVMap](https://github.com/manifestinteractive/jqvmap) provides source data and ready-to-use map files containing German ZIP code regions. One map draws each individual ZIP code area (as of 1999), and the other two have reduced sets of ZIP code regions grouped by the first two and three digits.
 
-The two maps that were added are:
+The three maps that were added are:
 
 - [./dist/maps/jquery.vmap.germany\_plz.js](./dist/maps/jquery.vmap.germany_plz.js) with _all_ PLZ areas (huge map, takes long time to render)
 - [./dist/maps/jquery.vmap.plz-2stellig.js](./dist/maps/jquery.vmap.plz-2stellig.js) with PLZ grouped by the first two digits
+- [./dist/maps/jquery.vmap.plz-3stellig.js](./dist/maps/jquery.vmap.plz-3stellig.js) with PLZ grouped by the first three digits
 
 Read more about the creation of these maps in the amended README: [./create/README.md](./create).
 
