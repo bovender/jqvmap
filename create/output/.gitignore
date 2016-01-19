@@ -1,3 +1,5 @@
 *
 
 !.gitignore
+!jquery.vmap.germany_plz.js
+!jquery.vmap.plz-2stellig.js

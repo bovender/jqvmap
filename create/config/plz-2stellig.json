@@ -1,0 +1,16 @@
+[
+        {
+                "name": "read_data",
+                "file_name": "./source/plz-2stellig.shp"
+        },
+        {
+                "name": "write_data",
+                "format": "jqvmap",
+                "file_name": "./output/jquery.vmap.plz-2stellig.js",
+                "params": {
+                        "code_field": "plz",
+                        "name_field": "plz",
+                        "name": "plz-2stellig"
+                }
+        }
+]

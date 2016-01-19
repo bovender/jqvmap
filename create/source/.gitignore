@@ -1,3 +1,6 @@
 *
 
 !.gitignore
+!README.md
+!germany_plz.*
+!plz-2stellig.*
