@@ -5,3 +5,4 @@
 !.gitignore
 !germany_plz.json
 !plz-2stellig.json
+!plz-3stellig.json
