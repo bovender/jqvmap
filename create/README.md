@@ -1,3 +1,40 @@
+Creating JQVMap maps on a Ubuntu Linux machine
+==============================================
+
+To create these map files on a machine running Ubuntu 15.10 Wily Werewolf, I had to do a couple of things differently from the instructions provided in the original readme:
+
+## Prerequisites
+
+Standard Ubuntu python (2.7 in Wily) suffices.
+
+```bash
+# Rather than easy_install GDAL (which hung on my system):
+sudo apt-get install gdal-bin
+
+pip install shapely         # as suggested below
+pip install booleano --pre  # note the --pre, otherwise it won't install!
+```
+
+## Processing
+
+Create the map files essentially as described in the original README:
+
+```bash
+cd /path/to/jqvmap/create
+python jqvmap.py config/germany_plz.json
+python jqvmap.py config/plz-2stellig.json
+```
+
+## Post-processing
+
+It turned out that the map names provided in the `.json` files are not used as-is; instead, `-merc` is automatically appended. This of course breaks your setup if you use the map name as provided.
+
+I manually deleted the `-merc` suffic from the `jquery-vmap-*.js` files, so that the map names match the file names.
+
+The original README.md follows.
+
+---
+
 ![JQVMap](http://jqvmap.com/img/logo.png "JQVMap")
 
 Creating Custom Maps for JQVMaps
