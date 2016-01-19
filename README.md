@@ -1,3 +1,14 @@
+Deutsche Postleitzahlen (German ZIP codes)
+==========================================
+
+This fork of [JQVMap](https://github.com/manifestinteractive/jqvmap) provides source data and ready-to-use map files containing German ZIP code regions. One map draws each individual ZIP code area (as of 1999), and the other has a reduced set of ZIP code regions grouped by the first two digits.
+
+The source data are contained in the branch `create-germany-plz` of this repository. Read more about the source of the data: [./create/source/README.md](./create/source).
+
+The original README of the JQVMap repository follows below.
+
+---
+
 ![JQVMap](http://jqvmap.com/img/logo.png "JQVMap")
 
 This project is a heavily modified version of [jVectorMap](https://github.com/bjornd/jvectormap) as it was in April of 2012.  I chose to start fresh rather than fork their project as my intentions were to take it in such a different direction that it would become incompatibale with the original source, rendering it near impossible to merge our projects together without extreme complications.
