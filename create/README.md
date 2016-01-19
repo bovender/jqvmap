@@ -15,6 +15,14 @@ pip install shapely         # as suggested below
 pip install booleano --pre  # note the --pre, otherwise it won't install!
 ```
 
+Note: If you see this error:
+
+        Downloading/unpacking booleano
+          Could not find a version that satisfies the requirement booleano (from versions: 1.0a1, 1.0a1dev-20090515, 1.0a1dev-20090517, 1.0a1dev-20090523, 1.0a1dev-20090524, 1.0a1dev-20090710, 1.0a1dev-20090715)
+
+you most likely forgot the `--pre` option above!
+
+
 ## Processing
 
 Create the map files essentially as described in the original README:
@@ -29,7 +37,7 @@ python jqvmap.py config/plz-2stellig.json
 
 It turned out that the map names provided in the `.json` files are not used as-is; instead, `-merc` is automatically appended. This of course breaks your setup if you use the map name as provided.
 
-I manually deleted the `-merc` suffic from the `jquery-vmap-*.js` files, so that the map names match the file names.
+I manually deleted the `-merc` suffix from the `jquery-vmap-*.js` files, so that the map names match the file names.
 
 The original README.md follows.
 
